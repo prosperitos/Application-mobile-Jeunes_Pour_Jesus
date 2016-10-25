@@ -1,0 +1,54 @@
+
+<ion-view>
+<ion-content>
+  <div>
+    <ion-side-menus enable-menu-with-back-views="false">
+      <ion-side-menu-content>
+      <ion-nav-bar class="header header-height">
+        <ion-nav-back-button class="no-text">
+        </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-dark button-icon button-clear ion-navicon" menu-toggle="left">
+          </button>
+          <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search">
+          </label>
+          <button class="button icon ion-home" id="menu-popover" ng-click="popover.show($event)"></button>
+        </ion-nav-buttons>
+        
+      </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+      </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+      <header class="bar bar-header bar-assertive">
+         <div class="menu-bottom forme">
+            Jeunes Pour Jesus
+          </div>
+      </header>
+      <ion-content class="has-header">
+        <ion-list>
+          <ion-item menu-close class="item item-icon-left" href="#/home">
+            Activités de la Jeunesse <i class="icon ion-chevron-right balanced"></i>
+          </ion-item>
+          <ion-item menu-close class="item item-icon-left" href="#/home">
+            Programme de la semaine <i class="icon ion-compass balanced"></i>  
+          </ion-item>
+          <ion-item menu-close class="item item-icon-left" href="#/home">
+            Resumés des enseignements <i class="icon ion-umbrella balanced"></i>
+          </ion-item>
+          <ion-item menu-close class="item item-icon-left" href="#/home">
+            Activités Jeunes Pour Jesus <i class="icon ion-ios-location balanced"></i>
+          </ion-item>
+          <ion-item menu-close class="item item-icon-left" href="#/home">
+            Resumés des enseignements <i class="icon ion-android-calendar balanced"></i>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus> 
+  </div>
+</ion-content>
+</ion-view>
+
